@@ -14,17 +14,19 @@
 
         <ImageView
             android:id="@+id/profilePic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_centerInParent="true"
             android:layout_marginBottom="10dp"
-            tools:srcCompat="@tools:sample/avatars[10]" />
+            app:srcCompat="@drawable/profilepic" />
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/profilePic"
+            android:textSize="30sp"
+            android:textColor="@color/orange"
             android:layout_centerHorizontal="true"
             android:text="@string/name" />
 
@@ -34,13 +36,15 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/name"
             android:layout_centerHorizontal="true"
+            android:textSize="15sp"
             android:text="@string/position" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="4">
+        android:layout_weight="4"
+        android:background="@color/orange">
 
         <LinearLayout
             android:id="@+id/contactInfo"
@@ -48,34 +52,47 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:orientation="vertical"
-            android:weightSum="5">
+            android:weightSum="4"
+            android:layout_marginBottom="15dp">
 
             <TextView
                 android:id="@+id/phone"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
                 android:text="@string/phone" />
 
             <TextView
                 android:id="@+id/fax"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
                 android:text="@string/fax" />
 
             <TextView
                 android:id="@+id/email"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
                 android:text="@string/email" />
 
             <TextView
                 android:id="@+id/site"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
                 android:text="@string/site" />
         </LinearLayout>
 
@@ -85,6 +102,7 @@
             android:layout_height="wrap_content"
             android:text="@string/address"
             android:layout_below="@id/contactInfo"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
