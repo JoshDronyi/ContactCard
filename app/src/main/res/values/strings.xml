@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ContactCard</string>
+    <string name="name">Joshua Dronyi</string>
+    <string name="position">Android Developer</string>
+    <string name="phone">123-456-7890</string>
+    <string name="fax">123-456-7890</string>
+    <string name="email">info@joshIsAwesome.com</string>
+    <string name="site">www.joshIsAwesome.com</string>
+    <string name="address">4598 Epic Boulevard \nPhiladelphia, PA 19121</string>
 </resources>
